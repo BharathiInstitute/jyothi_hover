@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
-
+//love your self
 void main() {
   runApp(const MainApp());
 }
@@ -312,6 +312,27 @@ class MainApp extends StatelessWidget {
                       colors: [Colors.purple, Colors.blue, Colors.cyan],
                     ),
                   ),
+                  SizedBox(height: 32),
+                  HoverTextWidget(
+                    text: 'Rainbow Text Animation!',
+                    normalFontSize: 24,
+                    hoverFontSize: 28,
+                    normalColor: Colors.grey,
+                    hoverColor: Colors.deepPurple,
+                    normalFontWeight: FontWeight.normal,
+                    hoverFontWeight: FontWeight.bold,
+                    underlineOnHover: false,
+                    normalLetterSpacing: 0.0,
+                    hoverLetterSpacing: 2.0,
+                    normalShadows: const [],
+                    hoverShadows: const [
+                      Shadow(
+                        color: Colors.purpleAccent,
+                        blurRadius: 12,
+                        offset: Offset(0, 0),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
@@ -597,8 +618,7 @@ class _HoverFadeTextWidgetState extends State<HoverFadeTextWidget> {
           ),
           child: Text(widget.text),
         ),
-      ),
-    );
+      );
   }
 }
 
@@ -663,8 +683,7 @@ class _HoverScaleTextWidgetState extends State<HoverScaleTextWidget> {
           ),
           child: Text(widget.text),
         ),
-      ),
-    );
+      );
   }
 }
 
