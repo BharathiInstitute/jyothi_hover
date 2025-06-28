@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 //love your self
+//read the code
 void main() {
   runApp(const MainApp());
 }
